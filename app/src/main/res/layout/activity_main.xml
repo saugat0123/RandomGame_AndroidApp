@@ -104,15 +104,13 @@
         android:id="@+id/btnend"
         android:text="End"
         android:visibility="invisible"
-        android:layout_margin="10dp"
         android:layout_width="0dp"
         android:layout_weight="30"
         android:layout_height="wrap_content" />
 
         <Button
             android:id="@+id/btnstart"
-            android:text="Start Game"
-            android:layout_margin="10dp"
+            android:text="Start"
             android:layout_width="0dp"
             android:layout_weight="35"
             android:layout_height="wrap_content" />
@@ -121,7 +119,6 @@
         android:id="@+id/btnrestart"
         android:text="Restart"
         android:visibility="invisible"
-        android:layout_margin="10dp"
         android:layout_width="0dp"
         android:layout_weight="30"
         android:layout_height="wrap_content" />

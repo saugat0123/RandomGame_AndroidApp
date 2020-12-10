@@ -90,16 +90,18 @@ class MainActivity : AppCompatActivity() {
             try {
                 btnend.isEnabled = true
                 count2 += 1
-                    if (btn1.text.toString().toInt() > btn2.text.toString().toInt()) {
-                        incorr += 1
-                    } else if (btn1.text.toString().toInt() < btn2.text.toString().toInt()) {
-                        corr += 1
-                    }
-                    var rand2: Int = (5 until 35).random()
-                    btn1.text = rand2.toString()
-                    tvcorrect.text = ("Correct :" + corr)
-                    tvincorrect.text = ("Incorrect :" + incorr)
+
+                if (btn1.text.toString().toInt() > btn2.text.toString().toInt()) {
+                    incorr += 1
+                } else if (btn1.text.toString().toInt() < btn2.text.toString().toInt()) {
+                    corr += 1
                 }
+
+                var rand2: Int = (5 until 35).random()
+                btn1.text = rand2.toString()
+                tvcorrect.text = ("Correct :" + corr)
+                tvincorrect.text = ("Incorrect :" + incorr)
+            }
             catch (ex:Exception){
                 Toast.makeText(this, ex.message, Toast.LENGTH_LONG).show()
             }
